@@ -1,3 +1,4 @@
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -5,15 +6,15 @@ export default function Home() {
       <header className="w-full border-b border-zinc-200 bg-white/90 px-6 py-4 shadow-sm backdrop-blur dark:border-zinc-800 dark:bg-zinc-950/90">
         <div className="mx-auto flex max-w-3xl items-center justify-between gap-4">
           <nav className="flex items-center gap-6 text-sm font-medium text-zinc-700 dark:text-zinc-200">
-            <a href="#" className="hover:text-black dark:hover:text-white">
+            <Link href="#" className="hover:text-black dark:hover:text-white">
               Home
-            </a>
-            <a href="#" className="hover:text-black dark:hover:text-white">
+            </Link>
+            <Link href="/submit" className="hover:text-black dark:hover:text-white">
               Submit
-            </a>
-            <a href="#" className="hover:text-black dark:hover:text-white">
+            </Link>
+            <Link href="/track" className="hover:text-black dark:hover:text-white">
               Track
-            </a>
+            </Link>
           </nav>
           <button
             type="button"
